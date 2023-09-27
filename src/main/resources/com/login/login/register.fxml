@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.login.login.controller.RegisterController">
+   <left>
+      <AnchorPane id="leftPane" prefHeight="550.0" prefWidth="274.0" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView glyphName="BANK" layoutX="91.0" layoutY="173.0" size="80" />
+            <Label layoutX="51.0" layoutY="221.0" prefHeight="59.0" prefWidth="183.0" text="NIC ASIA">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="305.0" prefHeight="36.0" prefWidth="129.0" text="Bank Pani,">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="355.0" text="Sathi Pani.">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane id="rightPane" prefHeight="550.0" prefWidth="554.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="username" layoutX="138.0" layoutY="162.0" prefHeight="38.0" prefWidth="179.0" promptText="Username" styleClass="inputField" />
+            <TextField fx:id = "userEmail" layoutX="140.0" layoutY="222.0" prefHeight="26.0" prefWidth="182.0" promptText="Email" />
+            <PasswordField fx:id="userPassword" layoutX="139.0" layoutY="271.0" prefHeight="38.0" prefWidth="184.0" promptText="Password" styleClass="inputField" />
+            <ComboBox fx:id="gender" layoutX="137.0" layoutY="337.0" prefWidth="150.0" promptText="Gender" />
+            <CheckBox layoutX="135.0" layoutY="385.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="214.0" text="Accept Terms and Conditions">
+               <font>
+                  <Font size="11.5" />
+               </font>
+            </CheckBox>
+            <Button  fx:id="registerButton" onAction="#onRegisterButtonClick" layoutX="140.0" layoutY="424.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" text="REGISTER" />
+            <FontAwesomeIconView glyphName="USER" layoutX="107.0" layoutY="190.0" size="24" wrappingWidth="18.971460342407227" />
+            <FontAwesomeIconView glyphName="LOCK" layoutX="109.0" layoutY="301.0" size="24" text="" wrappingWidth="17.314223289489746" />
+            <FontAwesomeIconView glyphName="GROUP" layoutX="185.0" layoutY="120.0" size="61" text="" wrappingWidth="55.25713634490967" />
+            <Label layoutX="101.0" layoutY="14.0" text="Join us today!">
+               <font>
+                  <Font name="Malgun Gothic" size="35.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="ENVELOPE" layoutX="106.0" layoutY="244.0" size="24" />
+            <Hyperlink fx:id="link" layoutX="240.0" layoutY="485.0" onAction="#goToLogin" text="Login" underline="true" />
+            <Label layoutX="142.0" layoutY="487.0" prefHeight="19.0" prefWidth="98.0" text="Already an user?" />
+            
+            
+         </children>
+      </AnchorPane>
+   </center>
+   <stylesheets>
+      <URL value="@styles.css" />
+
+   </stylesheets>
+</BorderPane>

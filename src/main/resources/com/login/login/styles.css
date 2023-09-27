@@ -1,0 +1,10 @@
+#leftPane {
+  -fx-background-color : red;
+
+}
+#loginButton {
+    -fx-color : #00A3ff;
+    -fx-text-fill : white;
+
+}
+
